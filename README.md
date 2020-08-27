@@ -1,54 +1,54 @@
 # aws-project
 
-##How to use this guide:
+## How to use this guide:
 
-*This is not a step by step how-to guide.
+*  This is not a step by step how-to guide.
 
-*You should take each goal and "figure it out". I have hints to guide you in the right direction.
+*  You should take each goal and "figure it out". I have hints to guide you in the right direction.
 
-*Google is your friend. AWS Documentation is your friend. Stack Overflow is your friend.
+*  Google is your friend. AWS Documentation is your friend. Stack Overflow is your friend.
 s
-*Find out and implement the "right way", not the quick way. Ok, maybe do the quick way first then refactor to the right way before moving on.
+*  Find out and implement the "right way", not the quick way. Ok, maybe do the quick way first then refactor to the right way before moving on.
 
-*Shut down or de-provision as much as you can between learning sessions. You should be able to do everything in this guide for literally less than $50 using the AWS Free Tier. Rebuilding often will reinforce concepts anyway.
+*  Shut down or de-provision as much as you can between learning sessions. You should be able to do everything in this guide for literally less than $50 using the AWS Free Tier. Rebuilding often will reinforce concepts anyway.
 
-*Skip ahead and read the Cost Analysis and Automation sections and have them in the back of your mind as you work through the goals.
+*  Skip ahead and read the Cost Analysis and Automation sections and have them in the back of your mind as you work through the goals.
 
-*Lastly, just get hands on, no better time to start then NOW.
+* Lastly, just get hands on, no better time to start then NOW.
 
-##Project Overview
+## Project Overview
 
-*This is NOT a guide on how to develop websites on AWS. This uses a website as an excuse to use all the technologies AWS puts at your fingertips. The concepts you will learn going through these exercises apply all over AWS.
+* This is NOT a guide on how to develop websites on AWS. This uses a website as an excuse to use all the technologies AWS puts at your fingertips. The concepts you will learn going through these exercises apply all over AWS.
 
-*This guide takes you through a maturity process from the most basic webpage to an extremely cheap scalable web application. The small app you will build does not matter. It can do anything you want, just keep it simple.
+* This guide takes you through a maturity process from the most basic webpage to an extremely cheap scalable web application. The small app you will build does not matter. It can do anything you want, just keep it simple.
 
-*Need an idea? Here: Fortune-of-the-Day - Display a random fortune each page load, have a box at the bottom and a submit button to add a new fortune to the random fortune list.
+* Need an idea? Here: Fortune-of-the-Day - Display a random fortune each page load, have a box at the bottom and a submit button to add a new fortune to the random fortune list.
 
-##Account Basics
+## Account Basics
 
-*Create an IAM user for your personal use.
+* Create an IAM user for your personal use.
 
-*Set up MFA for your root user, turn off all root user API keys.
+* Set up MFA for your root user, turn off all root user API keys.
 
-*Set up Billing Alerts for anything over a few dollars.
+* Set up Billing Alerts for anything over a few dollars.
 
-*Configure the AWS CLI for your user using API credentials.
+* Configure the AWS CLI for your user using API credentials.
 
-*Checkpoint: You can use the AWS CLI to interrogate information about your AWS account.
+* Checkpoint: You can use the AWS CLI to interrogate information about your AWS account.
 
-##Web Hosting Basics
+## Web Hosting Basics
 
-*Deploy a EC2 VM and host a simple static "Fortune-of-the-Day Coming Soon" web page.
+* Deploy a EC2 VM and host a simple static "Fortune-of-the-Day Coming Soon" web page.
 
-*Take a snapshot of your VM, delete the VM, and deploy a new one from the snapshot. Basically disk backup + disk restore.
+* Take a snapshot of your VM, delete the VM, and deploy a new one from the snapshot. Basically disk backup + disk restore.
 
 Checkpoint: You can view a simple HTML page served from your EC2 instance.
 
 Auto Scaling
 
-*Create an AMI from that VM and put it in an autoscaling group so one VM always exists.
+* Create an AMI from that VM and put it in an autoscaling group so one VM always exists.
 
-*Put a Elastic Load Balancer infront of that VM and load balance between two Availability Zones (one EC2 in each AZ).
+* Put a Elastic Load Balancer infront of that VM and load balance between two Availability Zones (one EC2 in each AZ).
 
 Checkpoint: You can view a simple HTML page served from both of your EC2 instances. You can turn one off and your website is still accessible.
 
